@@ -1,0 +1,11 @@
+{
+    "name": "bitaac/theme-admin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kristoffer Eklund",
+            "email": "kristoffereklund1@gmail.com"
+        }
+    ],
+    "require": {}
+}
