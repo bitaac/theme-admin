@@ -4,6 +4,8 @@ require('laravel-elixir-vue-2');
 
 elixir.config.assetsPath = './resources/';
 elixir.config.publicPath = './public/';
+elixir.config.sourcemaps = false;
+elixir.config.production = false;
 
 /*
  |--------------------------------------------------------------------------

@@ -7,5 +7,11 @@
             "email": "kristoffereklund1@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bitaac\\ThemeAdmin\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
 }
