@@ -44,7 +44,24 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Store <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="{{ url('/admin/store/products') }}">
+                                        <span class="fa fa-shopping-cart" aria-hidden="true"></span> All Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url('/admin/store/products/create') }}">
+                                        <span class="fa fa-plus" aria-hidden="true"></span> Add Product
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
