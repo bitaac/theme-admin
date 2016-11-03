@@ -60,6 +60,12 @@
                                         <span class="fa fa-plus" aria-hidden="true"></span> Add Product
                                     </a>
                                 </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="{{ url('/admin/payments') }}">
+                                        <span class="fa fa-usd" aria-hidden="true"></span> Payment Logs
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
