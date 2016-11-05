@@ -31,11 +31,18 @@
                                 <td width="32" height="32" valign="middle" align="center"><img src="https://cdn.rawgit.com/pandaac-cdn/items/1076/{{ $product->item_id }}.gif"></td>
                                 <td>{{ $product->title }}</td>
                                 <td>{{ $product->description }}</td>
-                                <td><a href="#" class="btn btn-primary btn-xs">Edit</a></td>
+                                <td>
+                                    <a href="{{ url('/admin/products/edit/'.str_slug($product->title)) }}" class="btn btn-primary btn-xs">
+                                        <span class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                                    </a>
+                                    <a href="{{ url('/admin/products/delete/'.str_slug($product->title)) }}" class="btn btn-danger btn-xs">
+                                        <span class="fa fa-times" aria-hidden="true"></span>
+                                    </a>
+                                </td>
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="4">No products to show, you can <a href="#">add</a> one.</td>
+                                <td colspan="4">No products to show, you can <a href="{{ url('/admin/products/create') }}">add</a> one.</td>
                             </tr>
                         @endforelse
                     </table>

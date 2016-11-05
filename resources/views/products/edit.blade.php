@@ -6,7 +6,7 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default loading">
                 <div class="panel-heading">
-                    Add Product
+                    Edit Product
                 </div>
 
                 <div class="panel-body">
@@ -15,31 +15,31 @@
 
                         <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
                             <label class="control-label">Title</label>
-                            <input type="text" class="form-control" value="{{ old('title') }}" name="title">
+                            <input type="text" class="form-control" value="{{ $product->title }}" name="title">
                             <p class="help-block">{{ $errors->first('title') }}</p>
                         </div>
 
                         <div class="form-group {{ $errors->has('item_id') ? 'has-error' : '' }}">
                             <label class="control-label">Item ID</label>
-                            <input type="number" class="form-control" value="{{ old('item_id') }}" name="item_id">
+                            <input type="number" class="form-control" value="{{ $product->item_id }}" name="item_id">
                             <p class="help-block">{{ $errors->first('item_id') }}</p>
                         </div>
 
                         <div class="form-group {{ $errors->has('amount') ? 'has-error' : '' }}">
                             <label class="control-label">Count</label>
-                            <input type="number" class="form-control" value="{{ old('amount') }}" name="amount">
+                            <input type="number" class="form-control" value="{{ $product->item_count }}" name="amount">
                             <p class="help-block">{{ $errors->first('amount') }}</p>
                         </div>
 
                         <div class="form-group {{ $errors->has('points') ? 'has-error' : '' }}">
                             <label class="control-label">Points</label>
-                            <input type="number" class="form-control" value="{{ old('points') }}" name="points">
+                            <input type="number" class="form-control" value="{{ $product->points }}" name="points">
                             <p class="help-block">{{ $errors->first('points') }}</p>
                         </div>
 
                         <div class="form-group {{ $errors->has('description') ? 'has-error' : '' }}">
                             <label class="control-label">Description</label>
-                            <textarea class="form-control" name="description" placeholder="Optional.."></textarea>
+                            <textarea class="form-control" name="description" placeholder="Optional..">{{ $product->description }}</textarea>
                             <p class="help-block">{{ $errors->first('description') }}</p>
                         </div>
 

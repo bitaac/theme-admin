@@ -51,12 +51,12 @@
 
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                    <a href="{{ url('/admin/store/products') }}">
+                                    <a href="{{ url('/admin/products') }}">
                                         <span class="fa fa-shopping-cart" aria-hidden="true"></span> All Products
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/admin/store/products/create') }}">
+                                    <a href="{{ url('/admin/products/create') }}">
                                         <span class="fa fa-plus" aria-hidden="true"></span> Add Product
                                     </a>
                                 </li>
@@ -64,6 +64,25 @@
                                 <li>
                                     <a href="{{ url('/admin/payments') }}">
                                         <span class="fa fa-usd" aria-hidden="true"></span> Payment Logs
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Forum <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="{{ url('/admin/boards') }}">
+                                        <span class="fa fa-comments-o" aria-hidden="true"></span> All Boards
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ url('/admin/boards/create') }}">
+                                        <span class="fa fa-plus" aria-hidden="true"></span> Create Board
                                     </a>
                                 </li>
                             </ul>
@@ -78,7 +97,7 @@
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->email }} <span class="caret"></span>
+                                    {{ $account->email }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
