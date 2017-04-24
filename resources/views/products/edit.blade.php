@@ -4,6 +4,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
+            @include('admin::partials.notifications')
+            
             <div class="panel panel-default loading">
                 <div class="panel-heading">
                     Edit Product
