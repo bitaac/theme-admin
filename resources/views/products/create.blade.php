@@ -25,10 +25,10 @@
                             <p class="help-block">{{ $errors->first('item_id') }}</p>
                         </div>
 
-                        <div class="form-group {{ $errors->has('amount') ? 'has-error' : '' }}">
+                        <div class="form-group {{ $errors->has('count') ? 'has-error' : '' }}">
                             <label class="control-label">Count</label>
-                            <input type="number" class="form-control" value="{{ old('amount') }}" name="amount">
-                            <p class="help-block">{{ $errors->first('amount') }}</p>
+                            <input type="number" class="form-control" value="{{ old('count') }}" name="count">
+                            <p class="help-block">{{ $errors->first('count') }}</p>
                         </div>
 
                         <div class="form-group {{ $errors->has('points') ? 'has-error' : '' }}">

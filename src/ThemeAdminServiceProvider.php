@@ -17,6 +17,6 @@ class ThemeAdminServiceProvider extends AggregateServiceProvider
 
         $this->publishes([
             __DIR__.'/../public' => public_path('bitaac/theme-admin'),
-        ], 'public');
+        ], 'bitaac:admin:assets');
     }
 }

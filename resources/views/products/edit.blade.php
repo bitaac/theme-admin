@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             @include('admin::partials.notifications')
-            
+
             <div class="panel panel-default loading">
                 <div class="panel-heading">
                     Edit Product
@@ -27,10 +27,10 @@
                             <p class="help-block">{{ $errors->first('item_id') }}</p>
                         </div>
 
-                        <div class="form-group {{ $errors->has('amount') ? 'has-error' : '' }}">
+                        <div class="form-group {{ $errors->has('count') ? 'has-error' : '' }}">
                             <label class="control-label">Count</label>
-                            <input type="number" class="form-control" value="{{ $product->item_count }}" name="amount">
-                            <p class="help-block">{{ $errors->first('amount') }}</p>
+                            <input type="number" class="form-control" value="{{ $product->count }}" name="count">
+                            <p class="help-block">{{ $errors->first('count') }}</p>
                         </div>
 
                         <div class="form-group {{ $errors->has('points') ? 'has-error' : '' }}">
