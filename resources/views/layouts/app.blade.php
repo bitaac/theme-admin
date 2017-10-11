@@ -115,6 +115,28 @@
                                 </li>
                             </ul>
                         </li>
+
+                        @foreach ($navbar->getLinks() as $link)
+                            @if ($link->isDropdown())
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                        {{ $link->getLabel() }} <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu" role="menu">
+                                        @foreach ($link->getRoute() as $link)
+                                            <li>
+                                                <a href="{{ route($link->getRoute()) }}">{{ $link->getLabel() }}</a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </li>
+                            @else
+                                <li>
+                                    <a href="{{ route($link->getRoute()) }}">{{ $link->getLabel() }}</a>
+                                </li>
+                            @endif
+                        @endforeach
                     </ul>
 
                     <!-- Right Side Of Navbar -->
