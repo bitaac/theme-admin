@@ -18,6 +18,7 @@
                         </div>
 
                         <input type="submit" class="btn btn-primary" value="Submit">
+                        <a href="{{ route('admin.board.edit', $board) }}" class="btn">Back</a>
                     </form>
                 </div>
             </div>

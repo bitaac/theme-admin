@@ -32,6 +32,7 @@
                         </div>
 
                         <input type="submit" class="btn btn-primary" value="Submit">
+                        <a href="{{ route('admin.boards') }}" class="btn">Back</a>
                     </form>
                 </div>
             </div>

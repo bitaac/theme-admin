@@ -18,6 +18,7 @@
                         </div>
 
                         <input type="submit" class="btn btn-primary" value="Submit">
+                        <a href="{{ route('admin.product.edit', $product) }}" class="btn">Back</a>
                     </form>
                 </div>
             </div>
