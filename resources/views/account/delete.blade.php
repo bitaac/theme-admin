@@ -8,7 +8,7 @@
 
             <div class="panel panel-danger">
                 <div class="panel-heading">
-                    Account &rarr; {{ $editAccount->name }} &rarr; Delete
+                    Account &rarr; {{ $editAccount->getName() }} &rarr; Delete
                 </div>
 
                 <div class="panel-body">

@@ -13,19 +13,23 @@
 
                 <div class="panel-body">
                     <table class="table table-striped">
-                        <th>#</th>
+                        @if (Bitaac::getAccountNameField() !== 'id')
+                            <th>#</th>
+                        @endif
                         <th>Name</th>
                         <th>Email</th>
                         <th></th>
 
                         @foreach ($accounts as $account)
                             <tr>
-                                <td>
-                                    {{ $account->id }}
-                                </td>
+                                @if (Bitaac::getAccountNameField() !== 'id')
+                                    <td>
+                                        {{ $account->id }}
+                                    </td>
+                                @endif
 
                                 <td>
-                                    {{ $account->name }}
+                                    {{ $account->getName() }}
                                 </td>
 
                                 <td>

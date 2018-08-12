@@ -8,7 +8,7 @@
 
             <div class="panel panel-default loading">
                 <div class="panel-heading">
-                    Account &rarr; {{ $editAccount->name }}
+                    Account &rarr; {{ $editAccount->getName() }}
                 </div>
 
                 <div class="panel-body">
