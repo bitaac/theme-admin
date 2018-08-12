@@ -21,7 +21,7 @@
                             <p class="help-block">{{ $errors->first('name') }}</p>
                         </div>
 
-                        @if (Bitaac::twfa()->enabled())
+                        @if (Bitaac::twofa()->enabled())
                             <div class="form-group {{ $errors->has('secret') ? 'has-error' : '' }}">
                                 <label class="control-label">Secret</label>
                                 <input type="text" class="form-control" value="{{ $account->secret }}" name="secret">
