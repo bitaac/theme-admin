@@ -17,7 +17,8 @@
                             Are you sure you want to delete board <strong>{{ $board->title }}</strong>?
                         </div>
 
-                        <input type="submit" class="btn btn-primary" value="Submit">
+                        <input type="submit" class="btn btn-primary btn-sm" value="Submit">
+                        <a href="{{ route('admin.board.edit', $board) }}" class="btn btn-secondary btn-sm">Back</a>
                     </form>
                 </div>
             </div>

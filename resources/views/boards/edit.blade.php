@@ -4,6 +4,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
+            @include('admin::partials.notifications')
+
             <div class="panel panel-default loading">
                 <div class="panel-heading">
                     Edit Forum Board
@@ -31,7 +33,8 @@
                             <p class="help-block">{{ $errors->first('description') }}</p>
                         </div>
 
-                        <input type="submit" class="btn btn-primary" value="Submit">
+                        <input type="submit" class="btn btn-primary btn-sm" value="Submit">
+                        <a href="{{ route('admin.boards') }}" class="btn btn-secondary btn-sm">Back</a>
                     </form>
                 </div>
             </div>

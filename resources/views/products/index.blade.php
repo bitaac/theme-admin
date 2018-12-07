@@ -28,7 +28,7 @@
 
                         @forelse ($products as $product)
                             <tr>
-                                <td width="32" height="32" valign="middle" align="center"><img src="https://cdn.rawgit.com/pandaac-cdn/items/1076/{{ $product->item_id }}.gif"></td>
+                                <td width="32" height="32" valign="middle" align="center"><img src="{{ $product->getItemImage() }}"></td>
                                 <td>{{ $product->title }}</td>
                                 <td>{{ $product->description }}</td>
                                 <td>

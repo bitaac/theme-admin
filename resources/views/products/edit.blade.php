@@ -45,7 +45,8 @@
                             <p class="help-block">{{ $errors->first('description') }}</p>
                         </div>
 
-                        <input type="submit" class="btn btn-primary" value="Submit">
+                        <input type="submit" class="btn btn-primary btn-sm" value="Submit">
+                        <a href="{{ route('admin.products') }}" class="btn btn-secondary btn-sm">Back</a>
                     </form>
                 </div>
             </div>
