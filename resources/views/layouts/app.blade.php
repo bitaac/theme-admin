@@ -116,6 +116,20 @@
                             </ul>
                         </li>
 
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                Misc <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="{{ route('admin.terms') }}">
+                                        <i class="fa fa-book" aria-hidden="true"></i> ToS & Rules
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
                         @foreach ($navbar->getLinks() as $link)
                             @if ($link->isDropdown())
                                 <li class="dropdown">
