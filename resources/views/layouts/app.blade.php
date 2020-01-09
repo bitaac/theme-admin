@@ -188,6 +188,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <script src="/bitaac/theme-admin/js/app.js"></script>
 </body>
 </html>
