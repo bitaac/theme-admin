@@ -4,7 +4,7 @@
     "authors": [
         {
             "name": "Kristoffer Eklund",
-            "email": "kristoffereklund1@gmail.com"
+            "email": "eklukris@gmail.com"
         }
     ],
     "require": {},
@@ -15,7 +15,9 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.1-dev"
+            "dev-master": "3.0-dev"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
